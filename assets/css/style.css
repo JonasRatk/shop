@@ -134,3 +134,17 @@ body {
 .menu li {
     padding: 0 5px;
 }
+
+
+.owl-carousel {
+    background-color: #e4e4e4;
+    width: 100%;
+}
+
+#owl-demo .items img {
+    display: block;
+    width: 670px;
+    height: 355px;
+    margin-left: auto;
+    margin-right: auto;
+}

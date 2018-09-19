@@ -7,9 +7,13 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/owl.carousel.css">
     <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-formhelpers.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 
     <title>RegiAmber jewellry shop</title>
@@ -26,11 +30,13 @@
                 <div class="right-top">
                     <ul class="currency">
                         <li>
-                            Currency
+                            <select class="form-control BFHCurrenciesList" data-currency="EUR"></select>
+
                         </li>
                     </ul>
                     <ul class="order">
                         <li>
+
                             Order Tracking
                         </li>
                     </ul>
@@ -55,27 +61,99 @@
                     </span>
                     </div>
                 </div>
-                <div class="user">
-                    <a href="#">LOGIN</a>
-                    <a href="#" class="sign">SIGN UP</a>
-                    <a href="#">HELP</a>
-                </div>
+                <nav class="navbar navbar-default navbar-expand-lg navbar-light">
+                    <div class="user" id="navbarCollapse" class="collapse navbar-collapse justify-content-start">
+                        <ul class="nav navbar-nav navbar-right ml-auto">
+                            <li class="nav-item">
+                                <a data-toggle="dropdown" class="nav-link dropdown-toggle" href="#">Login</a>
+                                <ul class="dropdown-menu form-wrapper">
+                                    <li>
+                                        <form action="/examples/actions/confirmation.php" method="post">
+                                            <p class="hint-text">Sign in with your social media account</p>
+                                            <div class="form-group social-btn clearfix">
+                                                <a href="#" class="btn btn-primary pull-left"><i class="fa fa-facebook"></i> Facebook</a>
+                                                <a href="#" class="btn btn-info pull-right"><i class="fa fa-twitter"></i> Twitter</a>
+                                            </div>
+                                            <div class="or-seperator"><b>or</b></div>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" placeholder="Username" required="required">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="password" class="form-control" placeholder="Password" required="required">
+                                            </div>
+                                            <input type="submit" class="btn btn-primary btn-block" value="Login">
+                                            <div class="form-footer">
+                                                <a href="#">Forgot Your password?</a>
+                                            </div>
+                                        </form>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" data-toggle="dropdown" class="btn btn-primary dropdown-toggle get-started-btn mt-1 mb-1">Sign up</a>
+                                <ul class="dropdown-menu form-wrapper">
+                                    <li>
+                                        <form action="/examples/actions/confirmation.php" method="post">
+                                            <p class="hint-text">Fill in this form to create your account!</p>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" placeholder="Username" required="required">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="password" class="form-control" placeholder="Password" required="required">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="password" class="form-control" placeholder="Confirm Password" required="required">
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="checkbox-inline"><input type="checkbox" required="required"> I accept the <a href="#">Terms &amp; Conditions</a></label>
+                                            </div>
+                                            <input type="submit" class="btn btn-primary btn-block" value="Sign up">
+                                        </form>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
-            <div class="nav">
-                <ul class="menu">
-                    <li><a href="#body" class="active">Home</a></li>
-                    <li>Rings</li>
+            <div id="navbarCollapse" class="collapse navbar-collapse justify-content-start">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <!--                        <li class="nav-item"><a href="#" class="nav-link">Rings</a></li>-->
+                        <a data-toggle="dropdown" class="nav-link dropdown-toggle" href="#">Rings <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" class="dropdown-item">Rings for Women</a></li>
+                            <li><a href="#" class="dropdown-item">Rings for Man</a></li>
+                            <li><a href="#" class="dropdown-item">All Rings</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a data-toggle="dropdown" class="nav-link dropdown-toggle" href="#">Earrings <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" class="dropdown-item">???</a></li>
+                            <li><a href="#" class="dropdown-item">???</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item active"><a href="#" class="nav-link">Pendants</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Bracelets</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">All Jewellry</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
+                </ul>
+
+                <!--
+ <li>Rings</li>
                     <li>Earrings</li>
                     <li>Pendants</li>
                     <li>Bracelets</li>
                     <li>All Jewellry</li>
                     <li>Contact Us</li>
-                </ul>
                 <div class="cart">
                     <i class="fas fa-shopping-cart">
                     </i>
                     <span>Cart</span>
                 </div>
+-->
             </div>
         </div>
     </header>
@@ -141,10 +219,16 @@
     </section>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script src="assets/scripts/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="assets/scripts/owl.carousel.min.js"></script>
     <script src="assets/scripts/main.js"></script>
+    <script src="assets/scripts/bootstrap-formhelpers-currencies.js"></script>
+    <script src="assets/scripts/bootstrap-formhelpers.min.js"></script>
+    <script src="assets/scripts/bootstrap-formhelpers-fonts.js"></script>
+
+
 </body>
 
 

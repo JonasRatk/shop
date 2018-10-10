@@ -131,7 +131,7 @@
     padding-right: 16px;
     border-bottom: 1px solid #dfe3e8;
     border-radius: 0;
-    margin-bottom: 0; !important;
+    margin-bottom: 0 !important;
 }
 
 .nav-link img {
@@ -384,7 +384,6 @@
 .nav {
     display: flex;
     justify-content: space-between;
-    padding-top: 10px;
 
 }
 

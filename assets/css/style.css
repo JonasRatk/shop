@@ -431,6 +431,7 @@ a:active {
 .recommends {
     display: flex;
     justify-content: space-around;
+    margin-bottom: 15px;
 }
 
 .recommed-item {
@@ -438,10 +439,64 @@ a:active {
     width: 200px;
     /*    Preview*/
     border: 2px solid darkgrey;
+    padding-bottom: 10px;
+}
+
+.nameItem {
+    font-weight: 600;
 }
 
 .price {
     color: red;
+    font-weight: 600;
+}
+
+.cont {
+    position: relative;
+}
+
+.buttonItem {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+/*
+.buttonItem:hover{
+    border: 1px solid grey;
+
+}
+*/
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.cont:hover .buttonItem {
+    padding: 5px;
+    opacity: 0.6;
+    background-color: black;
+}
+
+.cont:hover .middle {
+    opacity: 1;
+}
+
+.tekst {
+    background-color: white;
+    color: black;
+    font-size: 10px;
+    padding: 3px 15px;
 }
 
 #inspiration {
